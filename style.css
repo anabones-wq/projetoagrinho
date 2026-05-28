@@ -1,0 +1,13 @@
+function mostrarCuriosidade(){
+
+  const curiosidades = [
+    "A capivara consegue ficar vários minutos debaixo d’água.",
+    "A onça-pintada possui uma mordida extremamente forte.",
+    "O tucano usa o bico para ajudar na temperatura do corpo.",
+    "O Paraná possui áreas importantes de preservação da Mata Atlântica."
+  ];
+
+  const sorteio = Math.floor(Math.random() * curiosidades.length);
+
+  document.getElementById("textoCurioso").innerHTML = curiosidades[sorteio];
+}
